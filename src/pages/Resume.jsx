@@ -7,7 +7,7 @@ export default function Resume() {
   return (
     <>
       <PageIntro eyebrow="Resume" title="Technical depth with hands-on ownership." description="A concise overview of experience, education, and engineering capabilities.">
-        <div className="button-row"><button className="button primary" type="button" onClick={() => window.print()}>Print / save PDF <Download /></button><a className="button secondary" href={`mailto:${profile.email}`}>Email <Mail /></a></div>
+        <div className="button-row"><a className="button primary" href={profile.resume} download>Download RESUME <Download /></a><a className="button secondary" href={`mailto:${profile.email}`}>Email <Mail /></a></div>
       </PageIntro>
       <section className="section resume-section"><div className="container resume-layout">
         <div>

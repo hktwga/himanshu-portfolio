@@ -14,7 +14,7 @@ export function ProjectCard({ project }) {
   return (
     <Reveal className="project-card">
       <div className="project-image">
-        <img src={project.image} alt="" />
+        <img src={project.images[0].src} alt="" />
         <span>{project.number}</span>
       </div>
       <div className="project-body">

@@ -25,7 +25,7 @@ export default function Layout({ children }) {
         </button>
         <nav className={open ? 'site-nav open' : 'site-nav'}>
           {nav.map(([name, path]) => <NavLink key={path} to={path} onClick={() => setOpen(false)}>{name}</NavLink>)}
-          <Link className="nav-cta" to="/resume" onClick={() => setOpen(false)}>View CV</Link>
+          <a className="nav-cta" href={profile.resume} target="_blank" rel="noreferrer" onClick={() => setOpen(false)}>View CV</a>
         </nav>
       </header>
       <AnimatePresence mode="wait">
@@ -34,7 +34,7 @@ export default function Layout({ children }) {
         </motion.main>
       </AnimatePresence>
       <footer className="site-footer">
-        <div><Link className="brand" to="/"><span>HKT</span><strong>{profile.shortName}</strong></Link><p>Embedded Linux. Robotics. Real hardware.</p></div>
+        <div><Link className="brand" to="/"><span>HKT</span><strong>{profile.shortName}</strong></Link><p>{profile.tagline}</p></div>
         <div className="footer-links">{nav.map(([name, path]) => <Link key={path} to={path}>{name}</Link>)}</div>
         <div className="social-links">
           <a href={profile.linkedIn} target="_blank" rel="noreferrer" aria-label="LinkedIn">in</a>
