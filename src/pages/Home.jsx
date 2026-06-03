@@ -26,7 +26,7 @@ const featuredProjects = projects.slice(0, 3).map((project, index) => ({
   ...project,
   title: [
     'Autonomous UGV Platform',
-    'STM32MP1 Robotic Arm Platform',
+    'Robotic Arm Platform',
     'MMTS & RIS Defense System',
   ][index],
 }))

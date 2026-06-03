@@ -42,28 +42,28 @@ export const projects = [
         id: 'ugv-img2',
         src: '/projects/autonomous-ugv/ugv-development-1.png',
         title: 'Platform Development & Integration',
-        description: 'Integration of compute modules, embedded controllers, motor drivers, sensors, and communication interfaces during early development stages.'
+        description: 'Mechanical platform integration, embedded controller bring-up, sensor mounting, communication interface validation, and system-level integration performed during development.'
       },
 
       {
         id: 'ugv-img3',
-        src: '/projects/autonomous-ugv/ugv-development-2.jpg',
+        src: '/projects/autonomous-ugv/ugv-img3.jpg',
         title: 'Subsystem Validation & Testing',
-        description: 'Hardware bring-up, software integration, sensor verification, and control-system testing performed during platform development.'
+        description: 'Subsystem validation including sensor verification, embedded software testing, communication debugging, navigation workflow checks, and platform readiness evaluation.'
       },
 
       {
         id: 'ugv-img4',
-        src: '/projects/autonomous-ugv/ugv-field-testing.jpg',
+        src: '/projects/autonomous-ugv/ugv-field-testing.png',
         title: 'Field Testing & Performance Validation',
-        description: 'Real-world testing conducted to validate navigation, communication, sensor performance, autonomous workflows, and operational reliability.'
+        description: 'Real-world deployment used to validate navigation accuracy, communication reliability, autonomous workflows, environmental sensing, and operational performance.'
       }
     ],
     videos: [
       {
         id: 'ugv-vid1',
         thumbnail: '/projects/autonomous-ugv/greenhouse-ugv-cover.png',
-        src: '',
+        src: '/public/images/projects/ugv/rover_vid.mp4',
         title: 'Autonomous Navigation Demo',
         description: 'Reserved for greenhouse navigation and field-validation footage.'
       }
@@ -119,10 +119,10 @@ export const projects = [
       'Conducted real-time validation',
     ],
     images: [
-      { id: 'arm-img1', src: '/images/projects/robotic-arm/placeholder-1.jpg', title: 'Robotic Arm Platform', description: 'STM32MP1-based Embedded Linux robotic arm validation platform.' },
-      { id: 'arm-img2', src: '/images/projects/robotic-arm/placeholder-2.jpg', title: 'Motor Control System', description: 'Motor-driver integration and encoder-feedback control layer.' },
-      { id: 'arm-img3', src: '/images/projects/robotic-arm/placeholder-3.jpg', title: 'Stereo Vision Setup', description: 'Stereo camera configuration for vision-assisted manipulation.' },
-      { id: 'arm-img4', src: '/images/projects/robotic-arm/placeholder-4.jpg', title: 'Calibration & Validation', description: 'Joint calibration, positioning checks, and real-time validation.' },
+      { id: 'arm-img1', src: '/images/projects/robotic-arm/placeholder-1.png', title: 'Robotic Arm Platform', description: 'STM32MP1-based Embedded Linux robotic arm validation platform.' },
+      { id: 'arm-img2', src: '/images/projects/robotic-arm/control_panel.png', title: 'Operator Control Interface', description: 'Custom operator interface developed for robotic arm control, actuator monitoring, command execution, calibration workflows, and real-time system interaction..' },
+      { id: 'arm-img3', src: '/images/projects/robotic-arm/stereo.png', title: 'Stereo Vision Setup', description: 'Stereo camera configuration for vision-assisted manipulation.' },
+      { id: 'arm-img4', src: '/images/projects/robotic-arm/calib.png', title: 'Calibration & Validation', description: 'Joint calibration, positioning checks, and real-time validation.' },
     ],
     videos: [{ id: 'arm-vid1', thumbnail: '/images/projects/robotic-arm/placeholder-4.jpg', src: '', title: 'Robotic Arm Motion Demo', description: 'Reserved for calibration, joint-positioning, and pick-and-place footage.' }],
     documents: [],
@@ -174,10 +174,11 @@ export const projects = [
       'Improved communication reliability',
     ],
     images: [
-      { id: 'mmts-img1', src: '/images/projects/mmts-ris/placeholder-1.jpg', title: 'Operator Interface', description: 'Android-based operator workflow and system-monitoring interface.' },
-      { id: 'mmts-img2', src: '/images/projects/mmts-ris/placeholder-2.jpg', title: 'System Architecture', description: 'Distributed Android, Linux, and microcontroller control architecture.' },
-      { id: 'mmts-img3', src: '/images/projects/mmts-ris/placeholder-3.jpg', title: 'Control Application', description: 'Command, telemetry, and automation workflow validation.' },
-      { id: 'mmts-img4', src: '/images/projects/mmts-ris/placeholder-4.jpg', title: 'Field Deployment', description: 'Integrated system prepared for deployment and reliability testing.' },
+      { id: 'mmts-img1', src: '/images/projects/mmts-ris/placeholder-1.png', title: 'Overview of System', description: 'MMTS & RIS platform connects Android operator applications with Raspberry Pi Linux controllers and microcontroller subsystems through a distributed control architecture..' },
+      { id: 'mmts-img2', src: '/images/projects/mmts-ris/control_panel.png', title: 'Operator Control Application', description: 'Custom control application developed for target operation, system monitoring, command execution, telemetry visualization, and deployment workflows..' },
+      { id: 'mmts-img4', src: '/images/projects/mmts-ris/hw_plat.png', title: 'MMTS Hardware Platform', description: 'Distributed embedded platform integrating motorized target control, embedded controllers, communication interfaces, and operator command workflows..' },
+      { id: 'mmts-img3', src: '/images/projects/mmts-ris/placeholder-3.jpg', title: 'Field Deployment & Validation', description: 'Integrated MMTS and RIS platform prepared for deployment, operational validation, communication testing, and end-to-end system verification..' },
+      
     ],
     videos: [{ id: 'mmts-vid1', thumbnail: '/images/projects/mmts-ris/placeholder-4.jpg', src: '', title: 'Distributed Control Validation', description: 'Reserved for operator workflow and system-validation footage.' }],
     documents: [],

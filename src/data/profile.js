@@ -5,7 +5,7 @@ import {
 
 export const profile = {
   name: 'Himanshu Kumar Thakur',
-  shortName: 'Himanshu.',
+  shortName: 'Himanshu Kumar Thakur.',
   role: 'Embedded Software Engineer | Robotics & Autonomous Systems',
   company: 'Aditya Precitech Ltd.',
   tagline: 'Engineering software that powers real machines.',

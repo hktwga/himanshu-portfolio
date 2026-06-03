@@ -8,8 +8,29 @@ export default function VideoGallery({ videos }) {
     <div className="video-gallery">
       {videos.map((video) => (
         <Reveal className="video-card" key={video.id}>
-          {video.src ? <video controls preload="metadata" poster={video.thumbnail} src={video.src} /> : <div className="video-card__placeholder" style={{ backgroundImage: `url(${video.thumbnail})` }}><Play /><span>Video placeholder</span></div>}
-          <div className="media-card__body"><h3>{video.title}</h3>{video.description && <p>{video.description}</p>}</div>
+          {video.src ? (
+            <div className="video-wrapper">
+              <video
+                controls
+                preload="metadata"
+                poster={video.thumbnail}
+                src={video.src}
+              />
+            </div>
+          ) : (
+            <div
+              className="video-card__placeholder"
+              style={{ backgroundImage: `url(${video.thumbnail})` }}
+            >
+              <Play />
+              <span>Video placeholder</span>
+            </div>
+          )}
+
+          <div className="media-card__body">
+            <h3>{video.title}</h3>
+            {video.description && <p>{video.description}</p>}
+          </div>
         </Reveal>
       ))}
     </div>
